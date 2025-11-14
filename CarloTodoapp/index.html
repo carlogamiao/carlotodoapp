@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlo To-Do App (Advanced)</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="glow"></div>
+  <main class="todo-container glass">
+    <h1>Advanced To-Do App</h1>
+    <div class="todo-input-area">
+      <input type="text" id="task-input" placeholder="Task name..." />
+      <input type="date" id="task-date" />
+      <select id="task-priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <select id="task-category">
+        <option value="Personal">Personal</option>
+        <option value="Work">Work</option>
+        <option value="School">School</option>
+        <option value="Errands">Errands</option>
+      </select>
+      <input type="text" id="task-notes" placeholder="Notes (optional)" />
+      <button id="add-btn"><i class="fas fa-plus"></i></button>
+    </div>
+    <h2 class="section-title">Tasks</h2>
+    <ul id="task-list"></ul>
+    <h2 class="section-title">Completed Tasks</h2>
+    <ul id="completed-list"></ul>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
